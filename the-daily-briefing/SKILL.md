@@ -39,7 +39,14 @@ On schedule (default ~8pm) the twin prompts a 60-second voice-note reflection:
 - The ONE thing for tomorrow → **feeds tomorrow's briefing**
 - Lessons about what works for *them* → **accumulate**
 
-Then: **write the durable learnings into the twin's memory** (running log + always-on memory updates). This is the single mechanism that makes tomorrow's briefing sharper than today's.
+### Persist it for real (this is the whole point — do not skip)
+A reflection that isn't saved is a reflection that never happened. At the end of every reflection, **actually write the durable learnings to memory using your built-in memory tool** — don't just acknowledge them in the chat. Save them as short, concrete entries so they load into every future session:
+- **Decisions + lessons** → memory (e.g. "Sarah responds to voice notes, not text — always voice her.").
+- **The ONE thing for tomorrow** → memory, tagged for tomorrow's briefing to pick up.
+- **Client updates** → the relevant file in `Clients/` (state, last touch, why).
+- **The #1 number** if it moved → update it in memory.
+
+Keep entries lean and factual (a sentence each), the way durable memory should read. **Verify it landed** — if the memory tool didn't confirm the write, say so and retry; never assume it saved. This write is the single mechanism that makes tomorrow's briefing sharper than today's. No write, no compounding.
 
 ## Workshop mode — the same-day compounding demo (engineer the delta, don't assert it)
 

@@ -9,6 +9,8 @@ Produces `SOUL.md`: who the coach is, how they talk, what they're building. This
 
 ## How to run it
 
+**Lead — don't wait.** Open by asking question 1 below right now, in your own warm words. Never start with "tell me about yourself" or "looking forward to learning about you" — that strands them. Ask the specific question, wait, react, ask the next. Every message ends with a question until the section is done.
+
 Ask ONE question at a time — sent as a voice note AND the same words as text, every time, so they can listen or read along. Listen for tone as much as content. If an answer is thin, ask a sharper follow-up before moving on — you're an interviewer, not a form. Use plain language: never say "system prompt" — say "how I talk and who I am."
 
 ### The questions
@@ -23,7 +25,7 @@ Ask ONE question at a time — sent as a voice note AND the same words as text, 
 - Vague tone: "Normal, I guess." → "Give me a sentence the way you'd text a client who smashed their goal."
 
 ## Write it
-Draft `~/[TwinName]/SOUL.md` from the template (`templates/SOUL.md`). The template ships with the twin's vision ("What I am") and the writing law (Australian English, no em dashes, no adverbs, the banned-word list) already baked in. **Never rewrite those sections.** You fill: who they are, the goal, tone words, signature phrases, banned phrases, and their own conventions (sign-off, emoji rules) on the law's last line. The #1 number slot gets filled at assembly. Capture the voice in *how you write it*, not just describe it.
+Draft `~/[TwinName]/SOUL.md` from the template (`templates/SOUL.md`). The template bakes in everything generic — the three jobs, how I work, communication rules, the writing law, the gate, and the standing orders. **Leave those baked sections alone.** You only fill the slots marked *(fill)*: **Who [Owner] is** (one-sentence identity + the goal), **How I sound** (tone words, signature phrases, banned phrases), the **writing conventions** line (their spelling/sign-off/emoji/punctuation rules), and the **Always / Free-to-handle** rules. The #1 number gets filled at assembly. Capture the voice in *how you write it*, not just describe it — the "How I sound" section should already read like them.
 
 ## Read it back
 Read the draft back in the coach's cloned voice: **"Here's who I think I am, in your words — fix anything that's off."** Refine on their feedback. Loop until they say it's them.

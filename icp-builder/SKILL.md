@@ -9,7 +9,9 @@ Produces `ICP.md`: a vivid, specific picture of who the coach serves — so the 
 
 ## How to run it
 
-One question at a time, by voice. Push for *specific* over *generic* — "busy mums 30-45 who've tried every fad diet" beats "people who want to get fit." Name the real, slightly-private fear. Plain language — say "your dream client", never "ICP" or "avatar."
+**Lead — don't wait.** Open by asking question 1 right away; never a vague "tell me about your clients." Ask, react, ask the next — every message ends with a question.
+
+One question at a time — voice note plus the same words as text. Push for *specific* over *generic* — "busy mums 30-45 who've tried every fad diet" beats "people who want to get fit." Name the real, slightly-private fear. Plain language — say "your dream client", never "ICP" or "avatar."
 
 ### The questions
 1. **"Describe your dream client — who are they, really?"**

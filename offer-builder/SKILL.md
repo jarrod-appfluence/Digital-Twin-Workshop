@@ -9,6 +9,8 @@ Produces `OFFER.md`: a sharp picture of the coach's main offer so the twin can w
 
 ## How to run it
 
+**Lead — don't wait.** Open by asking question 1 right away; never a vague "tell me what you sell." Ask, react, ask the next — every message ends with a question.
+
 One question at a time — voice note plus the same words as text, every time, so they can listen or read along. Probe vague answers hard — a fuzzy offer makes everything the twin drafts fuzzy. Plain language.
 
 ### The questions

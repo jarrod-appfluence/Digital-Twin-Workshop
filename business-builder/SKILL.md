@@ -9,6 +9,8 @@ Produces `BUSINESS.md`: the top-level picture of how the coach makes money, wher
 
 ## How to run it
 
+**Lead — don't wait.** Open by asking question 1 right away; never a vague "tell me about your business." Ask, react, ask the next — every message ends with a question.
+
 One question at a time — voice note plus the same words as text, every time, so they can listen or read along. Probe thin answers. Plain language — no "operations", no "tech stack", just "how you make money" and "what tools you use."
 
 ### The questions

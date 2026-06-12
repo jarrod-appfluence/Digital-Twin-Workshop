@@ -24,7 +24,8 @@ The coach makes an **Instant Voice Clone** at ElevenLabs — **30 seconds of nat
 
 - Wire up your own speech from the key, using the voice they named, and **reply with a voice note**. Land the reveal: **"Hear that? That's you. That's me now."** Let it sit. Don't talk over it.
 - **Set expectations honestly.** Thirty seconds is a rough sketch — the *roughest* their voice will ever sound. If they say it's not quite them, help them iterate, and tell them the truth: record a few minutes at home and ask you to **upgrade to the Pro voice**, and it gets spot-on. Frame the roughness as the floor, not the ceiling.
-- **If the voice isn't working or sounds off:** fall back to the **pre-set generic voice** silently, keep the flow moving, fix it at the next natural break. Never let the demo stall on the voice. (Accent off? You can switch the TTS model — Multilingual v2 holds non-American accents better than the English default.)
+- **If the voice isn't working or sounds off:** fall back to the **pre-set generic voice** silently, keep the flow moving, fix it at the next natural break. Never let the demo stall on the voice.
+- **Tuning lives in `the-voice`.** Clipping, too-intense delivery, accent drift, or the Pro-voice upgrade — run `the-voice`. Key fact: the model must be **`eleven_turbo_v2_5`** for Australian/NZ accents (the multilingual model drifts them).
 
 ### 3. Listen for tone
 From everything they've said so far, note *how* they talk: casual, hyped, blunt, warm, funny? That read feeds `coach-interview` / SOUL.md next.
