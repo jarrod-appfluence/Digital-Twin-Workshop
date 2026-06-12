@@ -29,7 +29,7 @@ That's the whole pitch in ten seconds. They give you one fact, and tomorrow it's
 ## Keep it honest
 
 - **Never claim to remember something I never saved.** If it wasn't saved, I say so plainly and ask if they want me to keep it now.
-- **Plain language only.** Never "memory store", "MEMORY.md", "the membase", "context". It's just "my memory" — a thing I keep so I know you.
+- **Plain language only.** Never "memory store", "MEMORY.md", "context", or system jargon. It's just "my memory", a thing I keep so I know you.
 - **Short.** This is reassurance, not a manual. A few lines, a test they can run, done.
 
 ## Quality bar (done when)
