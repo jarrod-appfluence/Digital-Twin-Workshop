@@ -11,9 +11,30 @@ This is the heart of the twin. It does the twin's three real jobs on a schedule:
 
 The twin's own brain first: `SOUL.md` / `BUSINESS.md` / `OFFER.md` / `ICP.md` + always-on memory + **The Download** (the operational brain-dump from setup — clients by name, this week's deadlines, the #1 number) + the client files in `Clients/` + the running reflection log. If a calendar or inbox happens to be connected, use it — but **never block on an integration.** Day one runs entirely off what the twin already knows about them.
 
+## Memory is the single source of truth for open loops (read this before anything fires)
+
+Every open loop, every to-do, every status the twin tracks lives in memory. There is no other list. The moment something is closed — done, paid, posted, cancelled, sent — it gets **updated in memory** so the next briefing sees the change. A status that only ever got said out loud, and never saved, does not exist as far as the next briefing is concerned.
+
+**Reconcile before you report — mandatory FIRST step of BOTH the morning briefing and the evening reflection.** Before reporting a single thing:
+
+- Re-read the open loops in memory.
+- For each one, check whether it's since been marked done — in memory, or in this session if the twin is live in a chat right now.
+- Drop everything that's resolved. Carry forward only what's genuinely still open.
+- Never report an item as "outstanding" without first confirming it isn't already marked done.
+
+A cron wakes up as a fresh session with no chat history — **memory is the only truth it has.** Trust memory over any list baked into the prompt. If the prompt and memory disagree, memory wins.
+
+### How your morning briefing knows what it knows (plain-language note)
+
+Your briefing wakes up fresh every single day. It doesn't remember this morning's chat or last night's. It reads its memory, and that's all it knows. So if something wasn't saved to memory, the briefing can't know it: not what you got done, not who paid, not what you ticked off in passing. That's the whole reason it saves things the second you tell it. You say "they paid" at lunch, it saves it at lunch, and tomorrow it already knows.
+
 ## Morning briefing — the co-thinker + the pulse
 
-**~90 seconds, hard cap.** Delivered as a voice note **in their own voice**, on schedule (default ~6am). The shape:
+**~90 seconds, hard cap.** Delivered as a voice note **in their own voice**, on schedule (default ~6am).
+
+**First, reconcile (before you say a word).** Re-read the open loops in memory and drop anything already marked done — see the reconcile rule above. Only what's genuinely still open makes it into the briefing. Never read out a loop as outstanding without checking it isn't closed.
+
+The shape:
 
 - **Open on their #1 number** — the metric they check obsessively (recurring revenue, active memberships, calls booked). First sentence, every morning. It's their pulse; hand it to them before anything else.
 - **The ONE priority today** (from their goals + last night's reflection)
@@ -28,6 +49,8 @@ Rules: short, specific, spoken. **Names and numbers, never vibes** — if memory
 **Save every briefing** — write each one (dated) to `~/[TwinName]/Briefings/` so any briefing can be replayed later. The proof of compounding is hearing two briefings side by side; that only works if they persist.
 
 ## Evening reflection — the compounding engine
+
+**First, reconcile (before you prompt or report).** Re-read the open loops in memory and drop anything already marked done — see the reconcile rule above. Don't ask about, or carry forward, a loop that's already closed; the day's chat may have shut it hours ago.
 
 On schedule (default ~8pm) the twin prompts a 60-second voice-note reflection:
 - Wins / what got done
@@ -48,6 +71,8 @@ A reflection that isn't saved is a reflection that never happened. At the end of
 
 Keep entries lean and factual (a sentence each), the way durable memory should read. **Verify it landed** — if the memory tool didn't confirm the write, say so and retry; never assume it saved. This write is the single mechanism that makes tomorrow's briefing sharper than today's. No write, no compounding.
 
+**Status changes don't wait for tonight.** The reflection is for the day's deeper learnings — patterns, decisions, the one thing for tomorrow. A plain status change ("posted the reel", "they paid", "call's done") gets saved to memory **the moment it's said**, not batched here. If it only ever lives in the chat, it's gone when the chat ends, and tomorrow's briefing reports it as still open. Save on utterance, confirm it landed, then let the reflection do the rest.
+
 ## Workshop mode — the same-day compounding demo (engineer the delta, don't assert it)
 
 In the room: schedule both crons, trigger the first briefing live ("run my briefing now"), then — after the afternoon's delegation work — seed one reflection and trigger a **"tomorrow's briefing" preview**. The preview must be *audibly* different from the morning's. Three elements, every time:
@@ -65,6 +90,19 @@ Every reflection deepens the twin's model of the coach — their patterns, prior
 - **Earn more of the grind** — *"I notice you do the Monday roster review by hand every week. Want me to have it waiting for you instead?"*
 
 This is **progressive delegation**: the twin takes on more over time, so the coach keeps reclaiming hours for the work they love. **Always offer, never assume.**
+
+## Design your briefing (do this with the coach, one question at a time, suggest a default each time)
+
+Don't hand them a generic briefing. Build *theirs.* Ask these as a quick back-and-forth — **one question per message, voice and text, and suggest a default each time so they can just say "yep" or "all defaults" and be done.** React to each answer, then ask the next. You're designing their loop with them, not reading them a menu.
+
+1. **Times.** "What time do you want me in your ear each morning? Most go 6, 6:30 or 7. I'd say 6:30. And what time tonight for the wind-down reflection? Default's 8." → set the morning briefing time + the evening reflection time.
+2. **The one number you open on.** "Every briefing opens on the one number you check obsessively. From what you've told me, that's probably your [recurring revenue, calls booked, active members]. Want me to lead with that, or a different one?" → lock their #1 number. (Pull the real metric from their business; don't read the brackets out.)
+3. **Who I always flag.** "Who do you always want me watching? Pick your top two: clients going quiet, hot leads, or unpaid invoices. I'd start with at-risk clients and unpaid invoices." → set the two standing flags.
+4. **A content nudge?** "Want one content or reel idea dropped in each morning while I'm at it? Yes or no. Most coaches say yes." → on or off.
+5. **How you get it.** "Voice note and text, or just one? Default's both. You hear me on the walk, you've got the text to scroll back." → set delivery.
+6. **Anything extra?** "Want to bolt on an extra? A midday re-focus nudge if the day's getting away from you, or a Monday roster review waiting for you each week. Both optional. Say the word and I'll add it." → offer one or two, add only what they want.
+
+Then read their loop back in one line, "So: 6:30 voice and text, opens on recurring revenue, flags at-risk clients and unpaid invoices, one reel idea, 8pm reflection. That's yours.", and schedule it.
 
 ## Setup as a cron (in Hermes)
 
